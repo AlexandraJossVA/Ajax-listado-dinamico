@@ -60,7 +60,6 @@
         var botonBuscar = document.querySelector("#buscar-paciente");
         botonBuscar.addEventListener("click", function(){
             var xhr = new XMLHttpRequest();
-            xhr.open("GET","https://raw.githubusercontent.com/sandrallara/lista.json/refs/heads/main/pacientes.json");
 
             xhr.addEventListener("load", function(){
                 if(xhr.status == 200) {
